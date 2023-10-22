@@ -2,3 +2,4 @@ pandas
 pillow
 folium
 streamlit-option-menu
+streamlit-folium
