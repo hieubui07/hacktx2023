@@ -58,18 +58,31 @@ class MultiApp:
     run()
     
 # Map Function
-location = st.text_input("Enter your city name:")
 
-if location:
+excel_file = pd.read_excel('data/Datasets.xlsx')
+excel_file = excel_file.values
 
-    m = folium.Map(location=[30.274659, -97.740008], zoom_start=16)
-    folium.Marker(
-        [30.274659, -97.740008],
-        popup=location,
-        tooltip=location
-    ).add_to(m)
+city = st.text_input("Enter your city name:")
 
-    st_data = st_folium(m, width=725)
+if city:
+    for business in excel_file:
+        if business[2] == city:
+            location = [business[5],business[6]]
+            name = business[0]
+            address = business[1]
+            description = business[7]
+            m = folium.Map(location=location, zoom_start=16)
+            folium.Marker(
+            [30.28799881847302, -97.72764340191415],
+                popup=name,
+                tooltip=address
+            ).add_to(m)
+            
+            st_data = st_folium(m, width=725)
+            st.write("Name: " + name)
+            st.write("Address: " + address)
+            st.write("Specialties: " + description)
+            break
 
 else:
     st.write("Enter your city name to get started.")
