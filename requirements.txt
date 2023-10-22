@@ -3,4 +3,4 @@ pillow
 folium
 streamlit-option-menu
 streamlit-folium
-openpyx
+numpy
