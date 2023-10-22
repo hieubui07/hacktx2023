@@ -56,7 +56,7 @@ if city:
                 tooltip=address
             ).add_to(m)
             
-            st_data = st_folium(m, width=725)
+            st_data = st_folium(m, width=500,height=500)
             st.write("Name: " + name)
             st.write("Address: " + address)
             st.write("Specialties: " + description)
