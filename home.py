@@ -1,6 +1,5 @@
 import streamlit as st
 import pandas as pd
-import matplotlib.pyplot as plt
 from streamlit_option_menu import option_menu
 from streamlit_folium import st_folium
 from PIL import Image
