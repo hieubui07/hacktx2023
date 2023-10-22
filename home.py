@@ -7,14 +7,14 @@ from PIL import Image
 import folium
 
 img = Image.open('logo.png')
-st.set_page_config(page_title="Wealthfare for Workers", page_icon=img, layout="centered")
+st.set_page_config(page_title="Welfare for Workers", page_icon=img, layout="centered")
 
 # HEADER SECTION 
 with st.container():
-    st.title('Wealthfare for Workers')
+    st.title('Welfare for Workers')
     st.write(
         """
-        Welcome to Wealthfare for Workers, your trusted online platform designed to help 
+        Welcome to Welfare for Workers, your trusted online platform designed to help 
         construction workers prioritize their mental well-being. We understand that the 
         construction industry can be physically and mentally demanding, and it's 
         essential to have access to the right support.
