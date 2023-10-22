@@ -1,5 +1,10 @@
 import streamlit as st
 
+from PIL import Image
+
+img = Image.open('logo.png')
+st.set_page_config(page_title="Welfare for Workers", page_icon=img, layout="centered")
+
 def app():
     st.write('Home')
 
