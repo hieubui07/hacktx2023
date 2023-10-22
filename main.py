@@ -73,7 +73,7 @@ if city:
             description = business[7]
             m = folium.Map(location=location, zoom_start=16)
             folium.Marker(
-            [30.28799881847302, -97.72764340191415],
+                location,
                 popup=name,
                 tooltip=address
             ).add_to(m)
@@ -82,7 +82,7 @@ if city:
             st.write("Name: " + name)
             st.write("Address: " + address)
             st.write("Specialties: " + description)
-            break
+
 
 else:
     st.write("Enter your city name to get started.")
