@@ -7,7 +7,7 @@ from PIL import Image
 import folium
 
 img = Image.open('logo.png')
-st.set_page_config(page_title="Welfare for Workers", page_icon=img, layout="centered")
+st.set_page_config(page_title="Wealthfare for Workers", page_icon=img, layout="centered")
 
 # HEADER SECTION 
 with st.container():
