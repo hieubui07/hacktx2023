@@ -65,9 +65,9 @@ location = st.text_input("Enter your city name:")
 
 if location:
 
-    m = folium.Map(location=[30.28799881847302, -97.72764340191415], zoom_start=16)
+    m = folium.Map(location=[30.274659, -97.740008], zoom_start=16)
     folium.Marker(
-        [30.28799881847302, -97.72764340191415],
+        [30.274659, -97.740008],
         popup=location,
         tooltip=location
     ).add_to(m)
