@@ -3,20 +3,25 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from streamlit_option_menu import option_menu
 from streamlit_folium import st_folium
+from PIL import Image
 import folium
 
-st.set_page_config(page_title="Welfare for Worker", page_icon=":tada:", layout="centered")
+img = Image.open('logo.png')
+st.set_page_config(page_title="Welfare for Workers", page_icon=img, layout="centered")
 
 import home, projects, contacts
-st.title("Home")
 
 # HEADER SECTION 
 with st.container():
     st.title('Wealthfare for Workers')
-    st.text('Description')
-    
-with st.container():
-    st.text('Search Bar')
+    st.write(
+        """
+        Welcome to Wealthfare for Workers, your trusted online platform designed to help 
+        construction workers prioritize their mental well-being. We understand that the 
+        construction industry can be physically and mentally demanding, and it's 
+        essential to have access to the right support.
+        """
+        )
 
 with st.container():
     st.write("---------")
