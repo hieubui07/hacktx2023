@@ -90,7 +90,7 @@ if city:
             st.write("Name: " + name)
             st.write("Address: " + address)
             st.write("Specialties: " + description)
-            break
+
 
 else:
     st.write("Enter your city name to get started.")
